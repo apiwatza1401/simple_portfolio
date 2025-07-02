@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ร้านน้ำหอม Perfume Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ร้านน้ำหอม Perfume Shop</h1>
+    <p>หอม หรู ดูดี มีเสน่ห์ ✨</p>
+  </header>
+
+  <div class="container">
+    <h2>สินค้าแนะนำ</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://i.imgur.com/uHdUoyh.jpg" alt="น้ำหอม A">
+        <h3>Sweet Blossom</h3>
+        <p>ราคา 790 บาท</p>
+        <button class="btn" onclick="addToCart('Sweet Blossom', 790)">เพิ่มลงตะกร้า</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/b1OJxxp.jpg" alt="น้ำหอม B">
+        <h3>Ocean Breeze</h3>
+        <p>ราคา 890 บาท</p>
+        <button class="btn" onclick="addToCart('Ocean Breeze', 890)">เพิ่มลงตะกร้า</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/H1L6KeL.jpg" alt="น้ำหอม C">
+        <h3>Midnight Rose</h3>
+        <p>ราคา 950 บาท</p>
+        <button class="btn" onclick="addToCart('Midnight Rose', 950)">เพิ่มลงตะกร้า</button>
+      </div>
+    </div>
+
+    <div id="cart">
+      <h3>🛒 ตะกร้าสินค้า</h3>
+      <ul id="cart-items"></ul>
+      <p><strong>รวมทั้งหมด:</strong> <span id="total">0</span> บาท</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 ร้านน้ำหอม Perfume Shop | โทร. 099-123-4567
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
