@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy static site to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # หรือเปลี่ยนเป็น branch ที่คุณใช้
+      - main
 
 permissions:
   contents: read
@@ -17,13 +17,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload HTML/CSS
+      - name: Upload static files
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./  # root ของ HTML/CSS
+          path: ./  # โฟลเดอร์หลักที่มี index.html
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
