@@ -1,3 +1,5 @@
-! [Deploy Static Website to Github Pages workflow status](https://github.com/apiwatza1401/simple_portfolio/blob/main/.github/workflows/deploy.yml/badge.svg)
+# Simple Portfolio
 
-This is a simple static website deployed with GitHub Actions and GitHub Pages.
+[![Deploy Status](https://github.com/apiwatza1401/simple-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/ชื่อผู้ใช้ของคุณ/simple-portfolio/actions/workflows/deploy.yml)
+
+A simple portfolio website using HTML, CSS, JavaScript.
